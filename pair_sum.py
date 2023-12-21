@@ -7,11 +7,12 @@ target = 6
 
 count = 0
 
-for i in list_of_elem:
-    for j in list_of_elem:
-        if i + j == target:
+for i in range(len(list_of_elem)):
+    for j in range(i+1,len(list_of_elem)):
+        print(list_of_elem[i], list_of_elem[j])
+        if list_of_elem[i] + list_of_elem[j] == target:
             count += 1
-            break
+            
         
 
 print(count)
